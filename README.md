@@ -23,4 +23,21 @@ Demo for Module 14 - Automation w Python
 
 ![Capture d’écran 2023-01-25 à 14 05 27](https://user-images.githubusercontent.com/62488871/214571098-67dfb0e3-c626-4b0c-ba29-4a56158a7b06.png)
 
+-----
+
+### Project 2: EC2 status checks
+
+1. create servers via tf script
+
+2. check instance state using boto 
+
+![Capture d’écran 2023-01-25 à 14 40 32](https://user-images.githubusercontent.com/62488871/214580632-0446032a-b0a3-4e80-b10d-328bdacdfbc6.png)
+
+3. check instance status using boto
+
+![Capture d’écran 2023-01-25 à 14 45 32](https://user-images.githubusercontent.com/62488871/214580654-57df51c3-b3a9-475f-a885-13828f958f85.png)
+
+4. can refactor into 1 single call to retrieve instance state and statuses
+
+![Capture d’écran 2023-01-25 à 14 49 32](https://user-images.githubusercontent.com/62488871/214580681-da90e3f9-2322-4b34-bfc1-98a5d4912f8b.png)
 
