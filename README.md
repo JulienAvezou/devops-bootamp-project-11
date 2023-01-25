@@ -41,3 +41,9 @@ Demo for Module 14 - Automation w Python
 
 ![Capture d’écran 2023-01-25 à 14 49 32](https://user-images.githubusercontent.com/62488871/214580681-da90e3f9-2322-4b34-bfc1-98a5d4912f8b.png)
 
+5. Automate scheduling of above checks - install schedule library & add scheduling logic
+
+![Capture d’écran 2023-01-25 à 17 56 48](https://user-images.githubusercontent.com/62488871/214628679-25f3481b-13ab-431b-86a7-cd37d10859e5.png)
+
+
+
