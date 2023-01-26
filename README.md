@@ -46,4 +46,18 @@ Demo for Module 14 - Automation w Python
 ![Capture d’écran 2023-01-25 à 17 56 48](https://user-images.githubusercontent.com/62488871/214628679-25f3481b-13ab-431b-86a7-cd37d10859e5.png)
 
 
+-----
 
+### Project 3: Add Environment Tag to EC2 instances
+
+1. fetch all instance ids using boto client, filtered by region
+
+![Capture d’écran 2023-01-26 à 12 27 00](https://user-images.githubusercontent.com/62488871/214824633-9cf34421-310f-465e-99bd-685a1eef98b7.png)
+
+![Capture d’écran 2023-01-26 à 12 27 07](https://user-images.githubusercontent.com/62488871/214824651-f4b3a904-d845-4104-93c9-c043fea199b3.png)
+
+2. create tags using boto resource, and apply the value of the tag to differentiate the environment for each region (prod or dev)
+
+![Capture d’écran 2023-01-26 à 12 27 15](https://user-images.githubusercontent.com/62488871/214824675-6a01ad83-3f44-43f5-9cce-43680d285b73.png)
+
+----
