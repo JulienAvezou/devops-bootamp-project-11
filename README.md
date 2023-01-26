@@ -61,3 +61,29 @@ Demo for Module 14 - Automation w Python
 ![Capture d’écran 2023-01-26 à 12 27 15](https://user-images.githubusercontent.com/62488871/214824675-6a01ad83-3f44-43f5-9cce-43680d285b73.png)
 
 ----
+
+### Project 4: EKS cluster info
+
+1. fetch list of clusters in region using boto client
+
+2. loop through list of cluster names and call .describe_cluster() to access specific info for each cluster in the list (state, endpoint, version etc.)
+
+![Capture d’écran 2023-01-26 à 12 45 56](https://user-images.githubusercontent.com/62488871/214828080-54f6990d-45da-4ed5-8f98-55327858129d.png)
+
+-----
+
+### Project 5: Automate backup snapshots EC2 volumes
+
+1. create ec2 client in region using boto
+
+2. fetch all volumes for ec2 client
+
+3. loop through volumes and create a snapshot for each using volume ids
+
+4. can schedule this task to run automatically every day
+
+5. can filter out volumes so you only create snapshots for prod volumes
+
+![Capture d’écran 2023-01-26 à 13 04 06](https://user-images.githubusercontent.com/62488871/214831398-d6c89d29-3b5a-4b5d-a0db-0839abe92d2a.png)
+
+
