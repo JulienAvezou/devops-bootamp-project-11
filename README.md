@@ -72,7 +72,7 @@ Demo for Module 14 - Automation w Python
 
 -----
 
-### Project 5: Automate backup snapshots EC2 volumes
+### Project 5: Automate backup of EC2 volumes snapshots 
 
 1. create ec2 client in region using boto
 
@@ -86,4 +86,26 @@ Demo for Module 14 - Automation w Python
 
 ![Capture d’écran 2023-01-26 à 13 04 06](https://user-images.githubusercontent.com/62488871/214831398-d6c89d29-3b5a-4b5d-a0db-0839abe92d2a.png)
 
+-----
 
+### Project 6: Automate cleanup of EC2 volumes snapshots
+
+1. create ec2 client in region using boto
+
+2. fetch all volumes for ec2 client
+
+![Capture d’écran 2023-01-27 à 11 41 29](https://user-images.githubusercontent.com/62488871/215067246-bfe8031c-1d30-4892-94b6-1858ba785051.png)
+
+3. loop through volumes and fetch snapshots for each volume using its id, and only snapshots created by you
+
+![Capture d’écran 2023-01-27 à 11 42 44](https://user-images.githubusercontent.com/62488871/215067379-5f960417-5b73-4033-9ad9-f744cd48311a.png)
+
+4. sort the fetched snapshots by start time, with help from itemgetter fn 
+
+![Capture d’écran 2023-01-27 à 11 44 16](https://user-images.githubusercontent.com/62488871/215067757-b2ad9ee8-2d2b-4b47-8c30-f7dd2f2fa2b5.png)
+
+5. delete all snapshots except for the 2 most recent ones 
+
+![Capture d’écran 2023-01-27 à 11 44 58](https://user-images.githubusercontent.com/62488871/215067783-d6615611-4212-4d2d-80c0-1ff733ba604c.png)
+
+6. automate the task with help from schedule lib
