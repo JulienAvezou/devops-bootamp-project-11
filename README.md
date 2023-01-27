@@ -109,3 +109,28 @@ Demo for Module 14 - Automation w Python
 ![Capture d’écran 2023-01-27 à 11 44 58](https://user-images.githubusercontent.com/62488871/215067783-d6615611-4212-4d2d-80c0-1ff733ba604c.png)
 
 6. automate the task with help from schedule lib
+
+-----
+
+### Project 7: Automate restoring of EC2 volumes from snapshots
+
+1. create ec2 client & resource in region using boto
+
+2. find volume for specific instance
+
+![Capture d’écran 2023-01-27 à 12 21 50](https://user-images.githubusercontent.com/62488871/215075022-a3e998ba-5357-4805-8194-73fbe4940094.png)
+
+3. fetch all snapshots for that volume and retrieve the latest snapshot
+
+![Capture d’écran 2023-01-27 à 12 22 20](https://user-images.githubusercontent.com/62488871/215075168-c4036fb0-49f7-4d1c-993f-99e3b9c268e7.png)
+
+4. create new volume from that latest snapshot
+
+![Capture d’écran 2023-01-27 à 12 23 04](https://user-images.githubusercontent.com/62488871/215075195-77f2bb5f-7d8c-45fd-b632-4050baea02ab.png)
+
+5. attach that new volume to the instance, wrapped in logic that checks volume state and conditionally attaches volume to instance if volume state is available
+
+![Capture d’écran 2023-01-27 à 12 23 27](https://user-images.githubusercontent.com/62488871/215075212-d6cc44be-1ae8-443f-97fc-88d60edf44e5.png)
+
+-----
+
