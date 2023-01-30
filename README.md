@@ -134,3 +134,50 @@ Demo for Module 14 - Automation w Python
 
 -----
 
+### Project 8: website monitoring
+
+1. create server on Linode cloup platform, install Docker on server, run nginx container
+
+2. create .py file and import requests module. check response status code from request as a condition
+
+![Capture d’écran 2023-01-30 à 13 56 59](https://user-images.githubusercontent.com/62488871/215499448-c2920e30-f9ce-4875-8504-adbfd2b41125.png)
+
+3. if response is not successful, we want to send out an email. configure said email connection using smtplib module
+
+![Capture d’écran 2023-01-30 à 14 09 47](https://user-images.githubusercontent.com/62488871/215499608-623c6d3f-43c4-4da6-91d4-6e255c0e96c2.png)
+
+4. set env variables for email address and password using pycharm config and os module
+
+![Capture d’écran 2023-01-30 à 14 15 04](https://user-images.githubusercontent.com/62488871/215499671-c218ae24-56c6-4c0f-a2a2-16103ed18b00.png)
+
+![Capture d’écran 2023-01-30 à 14 17 25](https://user-images.githubusercontent.com/62488871/215499831-5f943af7-7aff-4215-8003-1622fd884d07.png)
+
+5. send email logic
+
+![Capture d’écran 2023-01-30 à 14 18 16](https://user-images.githubusercontent.com/62488871/215499765-bbf0306f-d04f-4c83-8289-04b84bf0ce6d.png)
+
+6. catch exception in case of server down or container stopped
+
+![Capture d’écran 2023-01-30 à 14 23 38](https://user-images.githubusercontent.com/62488871/215499885-28a29a80-b966-43e1-af7b-64f426aa723e.png)
+
+7. refactor duplicate logic into fn
+
+![Capture d’écran 2023-01-30 à 14 28 17](https://user-images.githubusercontent.com/62488871/215500006-9e5c740f-60cb-4355-a411-f03aae662c4e.png)
+
+8. restart app logic using paramiko module to establish SSH client
+
+![Capture d’écran 2023-01-30 à 14 39 02](https://user-images.githubusercontent.com/62488871/215500058-6cdbf6e8-85b7-461d-81f0-e57f0311c5f6.png)
+
+9. restart server using client and then restart app. check that server is running condition before app restart
+
+![Capture d’écran 2023-01-30 à 14 46 46](https://user-images.githubusercontent.com/62488871/215500096-1cf9327b-bb3b-4878-a6bd-754d7cae13f5.png)
+
+![Capture d’écran 2023-01-30 à 14 53 55](https://user-images.githubusercontent.com/62488871/215500205-294b1c6b-f9f8-4b2a-bbd5-6462ee533d6c.png)
+
+10. refactor code into reusable blocks
+
+![Capture d’écran 2023-01-30 à 14 56 39](https://user-images.githubusercontent.com/62488871/215500174-4e619871-13a2-4e50-8442-195d79c0da83.png)
+
+11. schedule task logic
+
+![Capture d’écran 2023-01-30 à 14 59 14](https://user-images.githubusercontent.com/62488871/215500291-604404b8-3426-4f68-a7e1-2d6b2464c363.png)
